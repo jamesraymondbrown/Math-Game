@@ -2,7 +2,7 @@ require_relative 'questions'
 require_relative 'players'
 require_relative 'question_class'
 
-class GameFlow
+class Game
   
   def initialize
     @player_1 = Player.new("Player_1", "P1")
@@ -19,11 +19,11 @@ class GameFlow
     print "> "
     choice = $stdin.gets.chomp.to_s
 
-    if choice == question.answer
-      puts "💸Great job!💸"
+    if choice == question.answer.to_s
+      puts "💸 Great job! 💸"
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     else
-      puts "🔪Oh no! You got it wrong :( Now you lose a life🔪"
+      puts "🔪🔪🔪 Oh no! You got it wrong :( Now you lose a life 🔪🔪🔪"
       @player_1.lose_life
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     end
@@ -42,11 +42,11 @@ class GameFlow
     print "> "
     choice = $stdin.gets.chomp.to_s
 
-    if choice == question.answer
-      puts "💸Great job!💸"
+    if choice == question.answer.to_s
+      puts "💸 Great job! 💸"
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     else
-      puts "🔪Oh no! You got it wrong :( Now you lose a life🔪"
+      puts "🔪🔪🔪 Oh no! You got it wrong :( Now you lose a life 🔪🔪🔪"
       @player_2.lose_life
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     end
@@ -73,11 +73,11 @@ class GameFlow
     print "> "
     choice = $stdin.gets.chomp.to_s
 
-    if choice == question.answer
-      puts "💸Great job!💸"
+    if choice == question.answer.to_s
+      puts "💸 Great job! 💸"
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     else
-      puts "🔪Oh no! You got it wrong :( Now you lose a life🔪"
+      puts "🔪🔪🔪 Oh no! You got it wrong :( Now you lose a life 🔪🔪🔪"
       @player_1.lose_life
       puts "P1: " + @player_1.lives.to_s + "/3, P2: " + @player_2.lives.to_s + "/3"
     end

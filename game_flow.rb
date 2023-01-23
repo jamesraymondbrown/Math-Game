@@ -1,4 +1,3 @@
-require_relative 'questions'
 require_relative 'players'
 require_relative 'question_class'
 

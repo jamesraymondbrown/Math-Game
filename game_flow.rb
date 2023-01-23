@@ -34,10 +34,10 @@ class GameFlow
   def player_2_question
 
     puts "----- NEW TURN -----"
-    print "Player 2: "
+    puts "Player 2: "
     question = Question.new
 
-    print question.q_string
+    puts question.q_string
 
     print "> "
     choice = $stdin.gets.chomp.to_s
@@ -65,10 +65,10 @@ class GameFlow
   def player_1_question
 
     puts "----- NEW TURN -----"
-    print "Player 1: "
+    puts "Player 1: "
     question = Question.new
 
-    print question.q_string
+    puts question.q_string
 
     print "> "
     choice = $stdin.gets.chomp.to_s

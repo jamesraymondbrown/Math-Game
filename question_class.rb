@@ -6,14 +6,6 @@ class Question
     @answer = @integer_1_constant + @integer_2_constant
   end
 
-  # def integer1
-  #   @integer_1_constant = rand(1..20)
-  # end
-
-  # def integer2
-  #   @integer_2_constant = rand(1..20)
-  # end
-
   def answer
     @answer = @integer_1_constant + @integer_2_constant
     @answer.to_s
@@ -32,16 +24,3 @@ class Question
   end
 
 end
-
-# puts rand(1..20)
-
-question_1 = Question.new
-
-# puts question_1.integer1
-# puts question_1.integer2
-# puts question_1.q_string
-# puts question_1.a_string
-
-
-# puts question_1.question_string
-# puts question_1.answer_string
